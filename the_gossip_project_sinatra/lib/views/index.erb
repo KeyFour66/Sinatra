@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style type="text/css">
+     body {font-family: 'Nunito', sans-serif; text-align:center;}
+     </style>
+  <body>
+
+
+    <h1><b>Bienvenue dans RAGOLAND l'endroit pour critiquer et colporter </b></h1>
+
+    <p></p>
+    <h3>Voici les derniers ragots :</h3>
+
+      <% gossips.each_with_index do |gossip, id| %>
+          <p>
+          ✍🏻 <b><%= gossip.author %></b><br/>
+          😷 <%= gossip.content %><br/>
+          <a class="btn btn-primary btn-sm" href="/gossips/<%=id%>" role="button">Voir le ragot</a>
+          </p>
+      <% end %>
+
+      <p></p>
+      <a class="btn btn-warning" href="/gossips/new/" role="button">Crée un nouveau Ragot !</a>
+  </body>
+</html>

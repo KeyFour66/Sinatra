@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+       body {font-family: 'Nunito', sans-serif; text-align:center;}
+       </style>
+    <title>Créer un ragot</title>
+  </head>
+  <body>
+    <h1><b>Crée un ragot !</b></h1>
+    <h4>Vas-y petite commère balance ton ragot 🤮  , ca restera entre nous 🤐</h4>
+    <p></p>
+    <form action='/gossips/new/' method='POST'>
+      Ton pseudo  :  <input type='text' name='gossip_author'/><br/>
+      Balance ton ragot : <input type='text' name='gossip_content'/><br/>
+      <p></p>
+      <input class="btn btn-warning" type="submit" value="Envoi ton Ragot">
+    </form>
+  </body>
+</html>
